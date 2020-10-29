@@ -1,0 +1,2 @@
+# chgden
+AFQMC Charge Density
