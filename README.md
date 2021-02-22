@@ -6,7 +6,7 @@ Due to the pseudopotential core effect, all direct comparisons with QMC densites
 
 ## Naming convention of the files
 
-> {SYSTEM}\_P{plottingCell}\_F{dataFromSupercell}\_{FFTGridSize}\_{Unit}
+> {SYSTEM}\_P{plottingCell}\_F{dataFromSupercell}\_{plottingGridSize}\_{Unit}
 
 {SYSTEM} is the name of the system. "-NeCore" for Cu indicates this density is calculated using the Ne-core pseudopotential.
 
