@@ -4,14 +4,16 @@ All densities are finite-size (FS) corrected AFQMC densities. FS corrections use
 
 Due to the pseudopotential core effect, all direct comparisons with QMC densites should use the same pseudopotential as (in Appendix A of) the paper.
 
-Naming convention of the files are {SYSTEM}\_P{plottingCell}\_F{dataFromSupercell}\_{FFTGridSize}\_{Unit}
+## Naming convention of the files
 
-> {SYSTEM} is the name of the system. "-NeCore" for Cu indicates this density is calculated using the Ne-core pseudopotential.
+> {SYSTEM}\_P{plottingCell}\_F{dataFromSupercell}\_{FFTGridSize}\_{Unit}
 
-Data format:
+{SYSTEM} is the name of the system. "-NeCore" for Cu indicates this density is calculated using the Ne-core pseudopotential.
 
-> The first three columns of each file are the (x,y,z) Cartesian coordinates in {Unit}. In our case, the unit for all systems is Bohr.
+## Data format
 
-> The fourth and last column is the electron charge density, in {Unit}^(-3) -- in our case Bohr^(-3).
+The first three columns of each file are the (x,y,z) Cartesian coordinates in {Unit}. In our case, the unit for all systems is Bohr.
 
-> 1 empty line after each xy-block (within which the x and y coordinates are the same), and 2 extra empty lines after each x-block.
+The fourth and last column is the electron charge density, in {Unit}^(-3) -- in our case Bohr^(-3).
+
+1 empty line after each xy-block (within which the x and y coordinates are the same), and 2 extra empty lines after each x-block.
