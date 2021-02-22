@@ -2,7 +2,7 @@
 
 All densities are finite-size (FS) corrected AFQMC densities. FS corrections use formula (31) in the paper; an average of 12 quasi-random K-points is used for Cu.
 
-Due to the pseudopotential core effect, all direct comparisons with QMC densites should use the same pseudopotential as (in Appendix A of) the paper.
+Due to the pseudopotential core effect, all direct comparisons with QMC densities should use the same pseudopotential as (in Appendix A of) the paper.
 
 ## Naming convention of the files
 
