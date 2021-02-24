@@ -14,6 +14,6 @@ Due to the pseudopotential core effect, all direct comparisons with QMC densitie
 
 The first three columns of each file are the (x,y,z) Cartesian coordinates in {Unit}. In our case, the unit for all systems is Bohr.
 
-The fourth and last column is the electron charge density, in {Unit}^(-3) -- in our case Bohr^(-3).
+The fourth and the last columns are the electron charge density and corresponding AFQMC error bar, (respectively,) in {Unit}^(-3) -- in our case Bohr^(-3).
 
 1 empty line after each xy-block (within which the x and y coordinates are the same), and 2 extra empty lines after each x-block.
