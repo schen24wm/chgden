@@ -4,7 +4,7 @@ All AFQMC densities are finite-size (FS) corrected, using formula (31) in the pa
 
 All DFT (dense-K-grid) densities are generated with Quantum Espresso and are from self-consistent 6x6x6 K-point-grid LDA runs.
 
-We also provide the pseudopotentials (\*.UPF) for regenerating the pseudopotential core effect.
+We also provide the pseudopotentials (\*.UPF) for reproducing the pseudopotential core effect.
 
 ## Naming convention of the files
 
