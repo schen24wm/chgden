@@ -1,19 +1,35 @@
 # AFQMC Charge Density
 
-All densities are finite-size (FS) corrected AFQMC densities. FS corrections use formula (31) in the paper; an average of 12 quasi-random K-points is used for Cu.
+All AFQMC densities are finite-size (FS) corrected, using formula (31) in the paper; an average of 12 quasi-random K-points is used for Cu.
 
-Due to the pseudopotential core effect, all direct comparisons with QMC densities should use the same pseudopotential as (in Appendix A of) the paper.
+All DFT (dense-K-grid) densities are generated with Quantum Espresso and are from self-consistent 6x6x6 K-point-grid LDA runs.
+
+We also provide the pseudopotentials (\*.UPF) for regenerating the pseudopotential core effect.
 
 ## Naming convention of the files
 
-> {SYSTEM}\_P{plottingCell}\_F{dataFromSupercell}\_{plottingGridSize}\_{Unit}
+Pseudopotential files have the following names, which are the standard UPF formats (for Quantum Espresso use) generated from D. R. Hamann's ONCVPSP code:
 
-{SYSTEM} is the name of the system. "-NeCore" for Cu indicates this density is calculated using the Ne-core pseudopotential.
+> {atomicNumber}\_{element}\_{XC}\_{kineticEnergyCutoff}\_SRL.UPF
+
+Density data files have the following names:
+
+> {system}\_{source}\_P{plottingCell}\_F{dataFromSupercell}\_{plottingGridSize}
+
+Here, {system} is the name of the system. "-NeCore" for Cu indicates this density is calculated using the Ne-core pseudopotential.
+
+{source} is QMC (for AFQMC densities) or DFT (for DFT dense-K-grid densities).
+
+{plottingCell} and {dataFromSupercell} should be self-explanatory. Note that, for example, "fcc2x2x2" means a 2x2x2 supercell from the smallest possible FCC cell.
+
+{plottingGridSize} is the number of grid points we used for plotting, on Cartesian x, y, and z directions, respectively.
 
 ## Data format
 
-The first three columns of each file are the (x,y,z) Cartesian coordinates in {Unit}. In our case, the unit for all systems is Bohr.
+The first three columns of each file are the (x,y,z) Cartesian coordinates in \[Bohr\].
 
-The fourth and the last columns are the electron charge density and corresponding AFQMC error bar, (respectively,) in {Unit}^(-3) -- in our case Bohr^(-3).
+The fourth and the fifth columns are the electron charge density and corresponding AFQMC error bar, (respectively,) in \[Bohr^(-3)\].
 
-1 empty line after each xy-block (within which the x and y coordinates are the same), and 2 extra empty lines after each x-block.
+For DFT densities the fifth column is not present.
+
+There is 1 empty line after each xy-block (within which the x and y coordinates are the same), and 2 extra empty lines after each x-block.
