@@ -8,7 +8,7 @@ We also provide the pseudopotentials (\*.UPF) for reproducing the pseudopotentia
 
 ## Naming convention of the files
 
-Pseudopotential files have the following names, which are the standard UPF formats (for Quantum Espresso use) generated from D. R. Hamann's ONCVPSP code:
+Pseudopotential files have the following names, and are actually the standard UPF formats (for Quantum Espresso use) generated from D. R. Hamann's ONCVPSP code:
 
 > {atomicNumber}\_{element}\_{XC}\_{kineticEnergyCutoff}\_SRL.UPF
 
