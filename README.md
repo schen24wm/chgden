@@ -25,7 +25,7 @@ Pseudopotential files have the following names, and are in standard UPF formats,
 
 > {atomicNumber}\_{element}\_{XC}\_{kineticEnergyCutoff}\_SRL.UPF
 
-Density data files have the following names:
+Density grid data files have the following names:
 
 > {system}\_{source}\_P{plottingCell}\_F{dataFromSupercell}\_{plottingGridSize}
 
@@ -37,7 +37,19 @@ Here, {system} is the name of the system. (In Cu, "-NeCore" is appended to indic
 
 {plottingGridSize} is the number of FFT grid points used to represent the density, in Cartesian x, y, and z space.
 
-## Density data format
+1D-route density files (for QMC only) have the following names:
+
+> {system}\_QMC\_1D\_001-110-111
+
+Those can also be extracted from the AFQMC density grid data directly, following the description of the 1D route in the paper and the plotting cell information below.
+
+## Plotting cell information
+
+The origin for the Si lattice is the center of two nearest neighbor Si atoms, as in the paper. In the primitive FCC cell, 2 Si atoms are located at (-1/8,-1/8,-1/8) and (+1/8,+1/8,+1/8) (in lattice constant). This periodic FCC cell is expanded to the cubic plotting cell.
+
+The origin for the NaCl lattice is a Na atom. The origin for the Cu lattice is a Cu atom.
+
+## Density grid data format
 
 The first three columns of each file are the (x,y,z) Cartesian coordinates in \[Bohr\].
 
@@ -46,3 +58,11 @@ The fourth and the fifth columns are the charge density values and the correspon
 For DFT densities the fifth column is blank.
 
 There is 1 empty line after each xy-block (within which the x and y coordinates are the same, and z is varied), and 2 extra empty lines after each x-block.
+
+## 1D-route density data format
+
+The first column is the "distance on the route".
+
+The 2nd~4th columns are the (x,y,z) Cartesian coordinates in \[Bohr\].
+
+The last two columns are the QMC density and error bar.
