@@ -1,12 +1,12 @@
 # Data repository -- charge densities in Si, NaCl, Cu
 ## From the paper: 
-> ``Ab initio electronic density in solids by many-body plane-wave auxiliary-field quantum Monte Carlo calculations," 
+"Ab initio electronic density in solids by many-body plane-wave auxiliary-field quantum Monte Carlo calculations," 
 
-> Siyuan Chen, Mario Motta, Fengjie Ma, Shiwei Zhang,
+Siyuan Chen, Mario Motta, Fengjie Ma, Shiwei Zhang,
 
-> Phys. Rev. B 103, 075138 (2021)
+Phys. Rev. B 103, 075138 (2021)
 
-> DOI: 10.1103/PhysRevB.103.075138
+DOI: 10.1103/PhysRevB.103.075138
 
 ## Downloading and use of the data should only be in a manner consistent with the use of the paper. See citation above.
 
