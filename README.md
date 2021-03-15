@@ -43,7 +43,7 @@ Here, {system} is the name of the system. (In Cu, "-NeCore" is appended to indic
 
 Those can also be extracted from the AFQMC density grid data directly, following the description of the 1D route in the paper and the plotting cell information below.
 
-*Please note especially that the plotting cell of Si has its origin located at the center of two nearest-neighbor Si atoms, as in Sec. III-C in the paper.
+*Please note especially that the plotting cell of Si has its origin located at the center of two nearest-neighbor Si atoms, as in Sec. III-C in the paper, and is different from Fig. 3(a) in the paper.
 
 ## Density grid data format
 
