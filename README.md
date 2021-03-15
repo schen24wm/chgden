@@ -61,4 +61,4 @@ The first column is the "distance on the route".
 
 The 2nd~4th columns are the (x,y,z) Cartesian coordinates in \[Bohr\].
 
-The last two columns are the QMC density and error bar.
+The last two columns are the QMC density and error bar, in \[Bohr^(-3)\].
