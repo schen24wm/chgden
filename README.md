@@ -24,7 +24,7 @@ Here, {system} is the name of the system. "-NeCore" for Cu indicates this densit
 
 {plottingGridSize} is the number of grid points we used for plotting, on Cartesian x, y, and z directions, respectively.
 
-## Data format
+## Density data format
 
 The first three columns of each file are the (x,y,z) Cartesian coordinates in \[Bohr\].
 
