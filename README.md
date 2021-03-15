@@ -43,11 +43,7 @@ Here, {system} is the name of the system. (In Cu, "-NeCore" is appended to indic
 
 Those can also be extracted from the AFQMC density grid data directly, following the description of the 1D route in the paper and the plotting cell information below.
 
-## Plotting cell information
-
-The origin for the Si lattice is the center of two nearest neighbor Si atoms, as in the paper. In the primitive FCC cell, 2 Si atoms are located at (-1/8,-1/8,-1/8) and (+1/8,+1/8,+1/8) (in cubic-cell lattice constant). This periodic FCC cell is expanded to the cubic plotting cell.
-
-The origin for the NaCl lattice is a Na atom. The origin for the Cu lattice is a Cu atom.
+*Please note especially that the plotting cell of Si has its origin located at the center of two nearest-neighbor Si atoms, as in Sec. III-C in the paper.
 
 ## Density grid data format
 
