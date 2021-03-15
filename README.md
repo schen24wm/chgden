@@ -41,9 +41,7 @@ Here, {system} is the name of the system. (In Cu, "-NeCore" is appended to indic
 
 > {system}\_QMC\_1D\_001-110-111
 
-Those can also be extracted from the AFQMC density grid data directly, following the description of the 1D route in the paper and the plotting cell information below.
-
-*Please note especially that the plotting cell of Si has its origin located at the center of two nearest-neighbor Si atoms, as in Sec. III-C in the paper, and is different from Fig. 3(a) in the paper.
+These correspond to the data in Figs. 4, 6, and 9. They can be extracted directly from the AFQMC density data on the full 3D grid, but are included here as separate files for convenience. 
 
 ## Density grid data format
 
@@ -57,8 +55,8 @@ There is 1 empty line after each xy-block (within which the x and y coordinates 
 
 ## 1D-route density data format
 
-The first column is the "distance on the route".
+The first column is the distance along the route.
 
 The 2nd~4th columns are the (x,y,z) Cartesian coordinates in \[Bohr\].
 
-The last two columns are the QMC density and error bar, in \[Bohr^(-3)\].
+The last two columns are the QMC density and statistical error bar, in \[Bohr^(-3)\].
