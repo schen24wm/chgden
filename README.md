@@ -29,7 +29,7 @@ Density data files have the following names:
 
 > {system}\_{source}\_P{plottingCell}\_F{dataFromSupercell}\_{plottingGridSize}
 
-Here, {system} is the name of the system. "-NeCore" indicates this density is calculated using a Ne-core pseudopotential.
+Here, {system} is the name of the system. (In Cu, "-NeCore" is appended to indicate that the density is calculated using a Ne-core pseudopotential, to distinguish from the Ar-core results which are mentioned in the paper but not included here.)
 
 {source} is QMC (for AFQMC densities) or DFT (for DFT dense-K-grid densities).
 
